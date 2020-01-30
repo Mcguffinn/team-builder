@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactDOM from "react-dom";
 import './App.css';
 import Form from './Components/Form';
+import ListForm from './Components/ListForm';
 // import "index.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <h1>My Members</h1>
       <Form list ={list}/>
+      <ListForm addMember={addMember}/>
     </div>
   );
 }
