@@ -23,16 +23,17 @@ const ListForm = props => {
             <input
                 id='title'
                 type='text'
-                name='title'
+                name='id'
                 onChange={handleChanges}
-                placeholder='member'
+                placeholder='Member ID'
                 value={list.id}
             />
             <label htmlFor='member'></label>
             <textarea
                 id='member'
-                name='body'
+                name='member_name'
                 onChange={handleChanges}
+                placeholder="Member Name"
                 value={list.member_name}
             />
             <button type="submit">Add Member</button>
